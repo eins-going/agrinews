@@ -1,11 +1,15 @@
 @echo off
 
+cd www
+timeout /t 1
+
 git add .
-timeout /t 10
+timeout /t 3
 
 git commit -m "auto update"
-timeout /t 10
+timeout /t 5
 
 git push
-timeout /t 20
+timeout /t 5
+
 
