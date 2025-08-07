@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 농업 뉴스 블로그</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #28a745;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .article-source {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            line-height: 1.4;
+        }
+        
+        .article-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .article-content {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .article-link {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+        
+        .article-link:hover {
+            background: #0056b3;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .footer p {
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        
+        .update-time {
+            font-size: 0.9rem;
+            color: #adb5bd;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .stats {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌾 농업 뉴스 블로그</h1>
+            <p>농림축산식품부 & 농촌진흥청 최신 뉴스</p>
+            <div class="stats">
+                <div class="stat-item">📰 총 100개 기사</div>
+                <div class="stat-item">🕒 최신 업데이트: 2025년 08월 07일 21:17</div>
+            </div>
+        </div>
+        
+        <div class="articles-grid">
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청-한국농기계공업협동조합 수출협의회 공동 학술 토론회 개최</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 공적개발원조(ODA) 연계 농·기자재 수출 확대 전략 제시 - 현장에서 체감하는 문제 공유, 수출 활성화 방안 논의 농촌진흥청은 한국농기계협동조합 수출협의회와 공동으로 7월 24일 농촌진흥청 국제농업기술협력센터(ITCC)에서 '농진청–한국농기계공업협동조합 수출협의회 공동 심포지엄'을 개최했다.
+
+이번 학술 토론회는 공적개발원조(ODA) 사업과 민간 수출...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700158&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청 국립식량과학원, 집중호우 피해 함평 농가 긴급 복구 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 곽도연 국립식량과학원장, 24일 전남 함평 수해 농가 피해 복구 지원 - 토마토 시설하우스 복구 및 기자재 정비 농촌진흥청 국립식량과학원 곽도연 원장과 직원 35명은 7월 24일 집중호우로 큰 피해를 본 전라남도 함평군 토마토 농가를 방문해 긴급 일손 돕기를 실시했다.
+
+곽 원장과 직원들은 침수 피해로 영농이 중단된 농가를 찾아 작물 제거, 기자재 정비...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700009&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">인삼 고온 피해 줄이는 '이중구조하우스' 보급 박차</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 기존 해가림 시설보다 온도 최대 3도 낮춰… 고온 피해 70% 줄어 - 올해 전국 9곳에서 시범사업으로 효과 검증 - 농촌진흥청, 기상재해 대응해 첨단 재배 시설 확산해 나갈 것 농촌진흥청은 고온에 취약한 인삼의 안정적인 생산 기반을 구축하고 기후변화에 선제적으로 대응하기 위해 새로운 해가림 시설인 '이중구조하우스' 보급을 확대하겠다고 밝혔다.
+
+권재한...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700007&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 민관 손잡고 국산 콩 산업 활성화 박차</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 7월 24일, 국립식량과학원-(주)풀무원기술원 기술 교류 및 연구 협력 업무협약 체결 - 국산 콩 품종개발·소비 활성화 위한 품질 가공적성 평가 농촌진흥청 국립식량과학원(원장 곽도연)과 (주)풀무원기술원(기술원장 김태석)은 7월 24일, 충청북도 청주시에 있는 풀무원기술원에서 국산 콩 소비 확대와 산업화를 위한 업무협약을 체결했다.
+
+이번 협약은 국산 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700003&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">케이(K)-농업기술&middot;농기계, 우즈베키스탄 벼 생산력 높이는 밑거름</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- KOPIA 우즈베키스탄 센터 주관, 농기계 기증식 개최 - 한국 농기계·기술력…우즈베키스탄 벼 산업 발전에 기여 - 우즈베키스탄 대통령령·내각명령으로 KOPIA 성과, 현지 농업 정책에 공식 반영 농촌진흥청은 7월 23일(현지 시간) 우즈베키스탄 타쉬켄트에 있는 벼 연구소에서 한국산 농기계 기증식을 성황리에 개최했다고 밝혔다.
+
+* 해외농업기술개발사업(...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156699834&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">기후변화 대응 원예연구 전초기지 '북부원예시험장' 출범</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청 북부원예시험장, 7월 23일 개소식 - 미래 원예작물 최적지 강원 철원서 지역 적합 품종 선발, 생산기술 개발 농촌진흥청 국립원예특작과학원 북부원예시험장(강원특별자치도 철원군)이 7월 23일 개소식을 열고 기후변화에 대응한 미래 원예 연구의 전초기지로 새로운 출발을 알렸다.
+
+이날 개소식에는 농촌진흥청 서효원 차장을 비롯해 철원군의회 등 관련...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156699746&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국립농업과학원, 수해 복구 현장 농업기술 지원 나서</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 이승돈 국립농업과학원장, 24일 경남 산청 딸기 재배단지·전남 함평 스마트팜 시설 복구 현장 찾아 - 토사 제거·침수 시설 점검…적극적 기술지원으로 피해 최소화 나설 것 농촌진흥청 국립농업과학원은 집중호우로 피해를 본 경남 산청 딸기 재배단지와 전남 함평 스마트팜 시설을 찾아 영농 복구를 돕고 기술지원에 나섰다.
+
+이승돈 원장은 직원들과 경남 산청 딸기...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700005&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 집중호우 피해 청년농 논콩 재배단지 현장점검</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 곽도연 국립식량과학원장, 23일 청년농 논콩 재배단지 피해 현장 방문 - 집중호우 뒤 병해충 발생 증가에 대응해 초기 대응과 신속 방제 당부 농촌진흥청 국립식량과학원 곽도연 원장은 7월 23일 집중호우로 침수 피해가 발생한 충북 음성군 청년농업인 논콩 재배 현장을 방문해 병해충 관리 기술지원을 실시했다.
+
+이날 곽 원장이 방문한 농업회사법인 생극양조(대...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156699748&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 딸기 육묘 온실 침수 피해 현장 점검</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 국립원예특작과학원 원예작물부 김대현 부장, 집중호우 피해 본 딸기 농가 방문 - 기기 안전 점검과 철저한 병해충 방제 당부 농촌진흥청 국립원예특작과학원 원예작물부 김대현 부장은 7월 23일 충남 논산의 딸기 육묘 농가를 찾아 집중호우로 인한 피해 상황을 점검했다.
+
+김대현 부장은 시설 내부가 물에 잠겼을 때는 안전에 유의해 전기를 차단한 뒤, 양액을 공...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700011&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">비료 공정규격 일부 개정, 규제 혁신으로 산업계 어려움 해소 앞장</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 천연 생장조절물질(IAA) 비의도적 혼입 허용 기준 신설 - 용광로 제선 과정 부산물 '고로슬래그', 상토 원료 사용 허용 농촌진흥청은 그간 비료 산업계의 숙원 사항이었던 '비료 내 농약 성분 불검출' 규정에 대한 예외 기준을 마련하고, 용광로 제선 과정에서 발생하는 부산물인 고로슬래그를 상토 원료로 활용할 수 있도록 허용하는 내용의 「비료 공정규격 설...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156699832&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">제3회 농업 연구개발(R&D) 기술혁신 콘서트 개최</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- '시간이 멈춘 기술, 냉동과 해동의 과학' 주제로 최신 연구 동향 공유 - 학계·연구자 한 자리서 농축산물 품질 유지·기술혁신 모색 농촌진흥청은 7월 28일 오후 2시 본청 국제회의장에서 '시간이 멈춘 기술, 냉동과 해동의 과학'이라는 주제로 '제3회 농업 연구개발(R&D) 기술혁신 콘서트를 개최한다.
+
+이번 토크 콘서트에서는 국내 식품 냉·해동 기술 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700393&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">눈에 안 보이는 '토마토 녹응애' 증상 살펴 방제하세요</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 지속된 고온으로 토마토 농가 녹응애 피해 우려 - 햇볕에 그을리거나 멜론처럼 그물 형태 나타났다면 발생 의심 - 수확 일정 고려해 작물 보호제나 유기농업자재로 방제 농촌진흥청은 최근 시설 토마토 재배 농가에서 상품성을 떨어뜨리는 녹응애 피해가 발생하고 있다며 예방 관찰을 통한 조기 방제를 당부했다.
+
+고온 건조한 환경에서 많이 발생하는 녹응애는 잎, 줄...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700386&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, '스마트농업 인공지능(AI) 현장 활용 경진대회' 성료</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 25일, 본청서 시상식 개최…농업인·기업·농업빅데이터조사원 분야별 총 9점 시상 - 인공지능(AI) 활용 우수사례 발굴 및 확산 취지 농촌진흥청은 7월 25일, 본청 국제회의장에서 '스마트농업 인공지능(AI) 현장 활용 경진대회' 시상식을 개최하고 최종 수상 사례 9점을 발표했다.
+
+이번 경진대회는 인공지능(AI)과 빅데이터를 활용한 스마트농업의 현장 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700200&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">산재보험 가입 농사업장, '폭염 안전 5대 기본 수칙' 준수 필수!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- '산업안전보건기준에 관한 규칙' 개정안 시행, 농작업자 휴식·건강권 강화 - 폭염 시 2시간마다 20분 이상 휴식 의무…시원한 물, 보냉장구 지급 등 - 권재한 농촌진흥청장, 24일 경기도 다육이 재배 농장 찾아 홍보 농촌진흥청은 이달 17일부터 시행하고 있는 '산업안전보건기준에 관한 규칙' 개정안에 명문화된 '폭염 안전 5대 기본 수칙'을 산업재해보상...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700196&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">고온기 고품질 파프리카 생산, 재배 지침서 활용하세요</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 아주심기 시기와 양액 농도, 냉방 기술 등 종합적으로 담은 지침서 보급 - 8~10월 내수, 수출용 파프리카 생산에 도움 기대 농촌진흥청은 고온기 품질 좋은 파프리카 안정 생산을 위해 관련 기술을 한데 묶은 재배 지침서(매뉴얼)를 보급한다.
+
+파프리카는 여름철 고랭지를 중심으로 재배하지만, 8~10월 생산량 부족과 생산지 다변화 요구로 평지에서 안정적으...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700160&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 침수 피해지역 농업기술 수요 파악 …영농 재개 힘 보태</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 서효원 차장, 7월 25일 전남 담양 가루쌀 침수 피해 현장 찾아 - 농업기술 수요 청취, 직원들과 일손 돕기 동참 농촌진흥청은 연일 집중호우 피해지역을 찾아 농업인, 지방농촌진흥기관 관계자들과 소통하며 침수 농작물 및 농업시설물 복구에 필요한 농업기술 지원 방안을 모색하고 있다고 밝혔다.
+
+서효원 차장은 7월 25일 오후, 전남 담양군 수북면을 찾아 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700198&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 축산 담당 지도사 역량 강화 교육 추진</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 7월 24~25일, 지방 농촌지도사 대상 자격증 대비 및 실무교육 - 선배 지도사 경험 전수, 축산기사 취득·축산 기술 보급 활성화 농촌진흥청은 지방 농촌진흥기관 소속 축산 담당 공무원의 업무 역량을 높이고 축산 기술 보급을 활성화하기 위해 7월 24일부터 25일까지 '축산 담당 지도사 역량 강화 교육'을 실시한다고 밝혔다.
+
+이번 교육은 축산 기술 현...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700168&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">집중호우 뒤 '포도 열매 터짐, 무름 피해 방지' 기술지원 총력</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 국립원예특작과학원 김명수 원장, 28일 전남 장성 포도 농가 방문 - 집중호우 이후 열매 터짐, 탄저병 등 피해 확산 우려…긴급 현장 기술지원 농촌진흥청 국립원예특작과학원 김명수 원장은 7월 28일, 집중호우로 열매 터짐(열과), 무름 증상 등 생리장해가 발생한 전남 장성의 포도 재배 농가를 찾아 피해 상황을 점검하고 현장 기술지원을 실시했다.
+
+이번 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700446&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, '2025 농업인 안전365 캠페인 영상&middot;스토리 공모전' 개최</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 공모 주제, 농작업 안전 재해 예방 기술·농작업 환경개선 우수사례 등 - 9월 30일까지 농촌진흥청 누리집에서 접수…11월 3일 결과 발표 농촌진흥청은 농업인의 안전의식 제고와 농작업 안전 실천 문화 정착을 위해 오는 9월 30일까지 '2025 농업인 안전365 캠페인 영상·스토리 공모전'*을 개최한다.
+
+* 접수 기간 : 2025.7.17.(목)~9....</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700388&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 집중호우 피해 시설재배 단지 긴급 기술 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 국립원예특작과학원, 22~25일 경남 지역 시설재배 농가 현장 지원 - 침수, 폭염 대응 작물 피해 경감 기술 적용 당부 농촌진흥청 국립원예특작과학원은 7월 22일부터 25일까지 집중호우 피해를 본 경남 산청, 하동, 의령, 함안 지역 주요 시설 재배단지를 찾아 현장을 살피고 작물·병해충 관리 기술 지원을 진행했다.
+
+이번 집중호우로 경남 지역에서는 총...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700202&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국립원예특작과학원, 수해 입은 청년농업인 영농 복구에 온 힘</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 국립원예특작과학원 직원, 29일 나주 방울토마토 농가서 피해 복구 활동 - 온실 유입 흙·모래 치우고 침수 기자재 정비…영농 재개 도와 농촌진흥청 국립원예특작과학원은 7월 29일 집중호우 피해를 본 전남 나주의 청년 농업인 농가를 찾아 신속한 복구와 영농 재개를 위한 일손 돕기 활동을 펼쳤다.
+
+이날 방문한 농가는 이번 비로 3,500㎡ 달하는 방울토마...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700647&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국립축산과학원, 천안 일대 침수 피해 농가 복구 동참</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 축산자원개발부 김진형 부장 포함 직원 17명, 천안 일대 침수 농가 찾아 - 파손 하우스 정비 및 침수 농작물 수확 지원 농촌진흥청 국립축산과학원 축산자원개발부 김진형 부장은 7월 29일, 최근 집중호우로 침수 피해를 본 충남 천안시 일대 농가를 찾아 수해 복구 활동을 펼쳤다.
+
+충남 천안 지역은 7월 17일부터 사흘간 내린 집중호우로 도로 침수, 호수...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700643&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농업과학도서관 소장 고문헌 보존 작업 성공적 완료</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청-LX한국국토정보공사 협업, 지난해부터 추진 - 일제강점기 농업 관련 고문헌 322권 대상 - 역사적 가치 높은 조선총독부 권업모범장 보고(1906년), 강원도 농사시험장 사업보고(1911년) 등 고문서 포함 농촌진흥청 농업과학도서관은 LX한국국토정보공사(LX공사)와 2024년부터 추진해 온 고문헌 소독·탈산 보존 처리 작업을 올해 7월부로 성...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700520&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 민간 개발 기술 산업화 적극 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청, 2019년부터 민간연구개발지원사업 운영, 30여 기관(단체) 지원 - 시험 설계-수행-평가 전 과정에 의뢰인 참여, 연구진과 적극 소통 - 농약·비료, 퇴비·액비 검사 등은 한국농업기술진흥원에서 수행 농촌진흥청은 민간에서 개발한 기술의 산업화를 촉진하기 위해 2019년부터 '민간연구개발지원사업'을 운영, 지금까지 30여 개 기관(단체)을 지...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700518&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">알 차오르는 땅콩 성숙기, 적절한 재배 관리로 안정 생산</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 적절한 물관리·물길 정비, 병해충 방제 중요 최근 폭염, 국지성 집중 호우, 가뭄 등 급격한 기상 변화로 농작물 피해 우려가 커지고 있다.
+
+지난해에는 8월 극심한 가뭄에 이은 9월 폭우로 수확을 앞둔 땅콩 농가에서 큰 피해가 발생했다.
+
+농촌진흥청은 여름철 땅콩 재배 관리 요령을 소개하고, 안정 생산에 힘써주길 당부했다.
+
+국내 땅콩 주산지는 전북특별...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700516&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">민관 손잡고 생분해성 완효성 비료 실용화 속도 낸다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 이승돈 국립농업과학원장, 29일 생분해성 완효성 비료 현장 실증 재배지· 생산업체 방문 - 산업체와 협력, 지속 가능한 농업 구현 힘쓸 것 농촌진흥청은 산업체와 협력해 플라스틱 오염을 줄이기 위한 생분해성 수지 코팅 완효성 비료 시제품을 개발하고, 비료 사용을 줄이는 깊이거름주기 기술과 연계해 실증시험 중이라고 밝혔다.
+
+완효성 비료는 플라스틱으로 표면...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700639&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">인삼 '천량' 종자, 고온 대응 안정생산 기술지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청 인삼특작부장, 29일 충주 '천량' 생산 농가 방문 - 인삼 종자 안정생산, 순도 유지를 위한 기술 지도 농촌진흥청 국립원예특작과학원 인삼특작부 박정관 부장은 7월 29일 충북 충주의 인삼 '천량' 종자 채취 현장을 찾아 종자 순도 유지 상태를 점검하고 고온 피해 경감 기술을 지도했다.
+
+이번 방문은 여름철 이상고온으로 인삼 생육과 품질 저하...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700645&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">폭염 속 축사 냉방장치, 어떻게 써야 효율적일까?</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 쿨링패드·안개분무·국소송풍 등 장치별 냉방 원리와 활용법 안내 - 축사 냉방 효과는 관리가 좌우…철저한 장비 점검·청소 당부 농촌진흥청은 올해 이른 무더위로 가축 폐사가 잇따르고 당분간 폭염이 지속될 가능성이 높다며, 축사 냉방시설과 장비를 철저히 점검하고 관리해 달라고 당부했다.
+
+올해 전국 6월 평균기온은 22.9도(℃)로 역대 최고치를 기록했으며,...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700531&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">호우 뒤 폭염…채소류 생육, 병해충 관리 철저히</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 피해 본 채소 작물, 회복력이 떨어져 폭염에 더 민감하게 반응 - 뿌리 힘 약해진 고추, 수박 등… 병 방제, 토양 수분관리로 생육 도와야 농촌진흥청은 집중호우 뒤 지속된 폭염으로 노지 채소류의 생육 불량과 병해충 발생 우려가 커지고 있다며, 작물별 관리에 힘써 줄 것을 당부했다.
+
+▲고추= 강한 햇볕에 노출되면 꽃과 어린 열매가 떨어지는 낙과 현상과 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700735&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국립축산과학원 연일 침수 피해 현장 찾아 신속 기술지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 국립축산과학원 임기순 원장, 29일 경남 산청 침수 피해 농가 점검 - 축산전문가·농촌진흥기관 협력, 복구 및 고온기 대응 기술지원 확대 농촌진흥청 국립축산과학원 임기순 원장은 7월 29일, 최근 집중호우로 피해를 본 경남 산청의 한우농가를 찾아 축사 침수 현장을 점검하고, 피해 농가의 기술지원 수요를 직접 청취했다.
+
+이날 임 원장은 축산시설 침수 등...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700641&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">'풋귤&middot;청귤' 이름 비슷해도 다른 귤 &quot;겉모양, 성분 차이 커&quot;</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청, 풋귤·청귤의 정확한 명칭 사용 당부 - 풋귤은 덜 익은 노지 온주감귤, 항산화 효과 '나리루틴' 풍부…1일부터 출하 - 청귤은 3~4월 수확하는 재래 감귤, 주요 성분은 '헤스페리딘' 농촌진흥청은 풋귤 출하 시기를 맞아 시중에서 혼용해 불리고 있는 풋귤과 청귤의 차이점을 소개했다.
+
+풋귤(Citrus unshiu)은 8월 1일부터 9월 15...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701226&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">&quot;지속 가능한 농업환경 구축&quot; 부처 간 연구 협력 강화</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청 국립농업과학원-한국환경연구원, 1일 '농업환경 분야 공동연구를 위한 업무협약' 체결 - 농업환경 문제 예측부터 대응, 정책까지 통합적 해법 마련키로 농촌진흥청 국립농업과학원(원장 이승돈)과 한국환경연구원(원장 김홍균)은 8월 1일 한국환경연구원 중회의실에서 농업환경 분야의 통합적 연구 협력을 위한 업무협약을 체결했다.
+
+두 기관은 농업 활동에...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701323&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국립축산과학원, 수해 한우 농가 영농 재개 힘 보탤 것</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 강민구 축산환경생명부장, 경남 합천 한우농가 방문 - 침수 피해·시설 환경 점검, 현장 수요 기술 수렴 - "축사 위생·전기 안전 철저히 확인…폭염 대비 시설도 꼼꼼히 살펴야" 농촌진흥청 국립축산과학원 축산생명환경부 강민구 부장은 7월 31일 경상남도 합천군 율곡면의 한우 농장을 방문해 집중호우로 인한 축사 침수 피해 상황을 점검하고, 현장 애로사항을 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701106&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국립축산과학원, 하계 풀사료 재배 농가 현장 점검</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 집중호우 이후 습해 우려…풀사료 재배지 배수로 철저 관리 - "피해 시 단기형 사료작물로 수급 공백 최소화" 당부 농촌진흥청 국립축산과학원 축산자원개발부 김진형 부장은 7월 30일 전북특별자치도 정읍시 칠보면에 있는 알팔파 재배 한우 농장을 방문, 여름철 논 재배 사료작물의 생육 상황을 점검했다.
+
+이번 방문에서 김 부장은 최근 집중호우와 폭염 등 기상...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700998&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">국민 호흡기 건강, 잎들깨 식물특허 '숨들'로 지킨다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 숨쉬기 편하게 하는 들깨 '숨들' 육성, 잎들깨 산업에 기능성 소재 활용 확대 - 대조품종(남천) 대비 미세먼지에 의한 기관지 염증 최대 2.8배, 점액 과분비 1.8배 개선 - 농가 계약재배로 소득 증대 기여, 안정적인 공급망 구축 및 시장 확대 도모 국내 잎들깨는 로즈마린산을 비롯한 항산화 성분과 정유 성분*을 다량 함유한 것으로 알려져 있다.
+
+조...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700964&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 집중호우 피해지역에 '농업기계 응급복구단' 긴급 투입</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 7월 30일부터 3일간, 침수 농기계 2천여 대 수리·영농 정상화 지원 - 충남 피해지역에 농업기계 안전전문관 90명·수리 차량 42대 긴급 파견 농촌진흥청은 7월 30일부터 8월 1일까지 사흘간 이번 집중호우로 침수 피해가 발생한 충남 아산·서산·당진·예산 4개 시군에 '농업기계 응급복구단'을 1차 투입, 농업기계 2,000여 대를 복구한다고 밝혔다....</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701000&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">오메가-3 풍부한 들깨 종자는 '유전자'부터 달라</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청, 유전자형 차이 따라 들깨 종자 지방산 함량 달라지는 것 확인… 오메가-3 높은 자원에서 특정 유전자 발견 - 오메가-3 함량 65% 이상인 들깨 종자도 발굴해 연구 목적으로 분양 농촌진흥청은 유전자형 차이가 들깨 종자의 지방산 함량과 밀접한 관계가 있음을 확인했다.
+
+들깨 지방산의 약 90%는 식물성 불포화지방산이며, 이중 약 55%를 식물...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701228&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">'배추 아주심기' 기계화, 작업 효율성 높이고 인력은 절감</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 권재한 농촌진흥청장, 30일 전북 무주 '배추 아주심기(정식) 기계화 기술 현장 연·전시회' 참석해 기술 적용 상황 점검 - 자동 배추 정식기, 흙올림식 휴립피복기, 무재료 암거 형성기 등 선보여 - 현장 의견 수렴, 농촌 노동력 부족 문제 해결에 노력할 것 농촌진흥청은 7월 30일 전북특별자치도 무주에서 '배추 아주심기(정식) 기계화 기술 현장 연·전...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700993&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">새만금 간척지 영농 지원 '무인기(드론)', '위성'이 맡는다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 이승돈 국립농업과학원장, 30일 새만금 간척지 무인기(드론) 기술 적용 현장 방문 - 위성·무인기(드론) 활용 기술 현장과 연계 정밀농업 체계 구축, 현장 중심 스마트농업 지원 강화할 것 농촌진흥청은 전북특별자치도 김제·부안 일대 새만금 간척지를 중심으로 위성과 무인기(드론)를 활용한 영농 지원을 본격화하고 있다.
+
+이와 관련해 국립농업과학원 이승돈 원...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156700996&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">한우 암소 유전체 분석 후, '한우 교배계획 길라잡이'로 정액 선택</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 2025년 상반기 선발 보증씨수소 18마리 포함, 총 120마리 유전능력 정보 수록 - 유전체 정보 기반 맞춤형 교배계획 지원…농가 개량 목표 실현 도와 농촌진흥청은 농가의 개량 목표에 맞은 송아지 생산을 지원하기 위해 최신 씨수소 유전능력 정보를 반영한'한우 교배계획 길라잡이'제38호를 책자와 엑셀 프로그램 2가지 형태로 8월 1일부터 보급한다고 밝혔...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701224&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 청년농업인 농가에 고온 대비 토마토 생육 기술 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 이상호 기획조정관, 5일 전북특별자치도 장수 토마토 재배 농가 방문 - 현장기술지원단 확대 운영, 현장 중심 기술 지원에 만전 기해 농촌진흥청은 여름철 고온 등으로 어려움을 겪고 있는 농가를 대상으로 생육 부진 해결 기술을 집중적으로 지원하며, 안정적인 농산물 생산을 뒷받침하고 있다고 밝혔다.
+
+이와 관련해 이상호 기획조정관은 8월 5일 전북특별자치도 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701905&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농업인 온열질환 예방 나선 민관, 찾아가는 홍보활동 전개</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청, 동아오츠카(주)·대한적십자사와 온열질환 예방 교육·홍보활동 추진 - 농촌진흥청장, 8월 4일 충남농업기술원서 농업인 온열질환 예방 홍보 - 현장과 소통하며 폭염 대응 온열질환 예방 수칙 실천 독려 농촌진흥청은 동아오츠카(주), 대한적십자사와 함께 농업인 온열질환 예방과 열 스트레스 저감 등에 관한 교육 및 현장 홍보활동(캠페인) 등을 진행하...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701572&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">'반려동물 집밥 만들기' 전면 개편…영양 설계 더 쉽게</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 반려동물 수제 사료도 과학적으로 설계…실용성·정확성 높여 - 국내 '반려동물 사료 영양표준' 적용…개·고양이 맞춤 설계 가능 - 부족 영양소 자동 안내, 모바일 최적화 등 사용자 편의성 강화 어린이들이 '반려동물 집밥 만들기 프로그램'에 따라 직접 반려동물 수제 사료를 만들어보는 체험 행사가'부산어린이박람회(8월 1~3일)'에서 열려 큰 호응을 얻었다....</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701487&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 가축 고온 피해 예방&middot;축산 분야 안전관리 만전 기해</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 권재한 농촌진흥청장, 1일 경기도 한우농가 방문…폭염 대응 신기술 적용 효과 확인 - 우사 에어제트팬(측벽배기팬) 운영 현황 점검, 8월 말까지 60곳 농가 보급 - '가축사육기상정보시스템' 적극 활용 및 폭염 속 작업자 안전관리 당부 농촌진흥청은 연일 지속되는 폭염 속에서 가축 피해를 예방하고, 고온 스트레스에 대응하기 위해 '폭염 대응 축산 신기술'...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701325&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 아시아태평양경제협력체 농업생명공학 국제 공동연수회 열어</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 5일부터 이틀간 '지속 가능한 농업 및 식량안보를 위한 생명공학 기술' 주제로 개최 - 첨단 농업 생명공학 기술 활용한 식량안보 대응 방안 공동 모색 - 국제 협력과 교류 활성화 계기 기대 농촌진흥청이 아시아태평양경제협력체(APEC) 산하 회의체인 '농업생명공학 고위정책회의'에 앞서 8월 5일부터 6일까지 이틀간 전북특별자치도 전주에서 개최한 국제 공동...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701911&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">중앙-지방 농촌진흥기관, 호우&middot;폭염 대응 현황 공유…현장 기술지원 강화</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 서효원 차장 주재, 8월 4일 호우 및 폭염 대응 점검 회의 개최 - 지난 집중호우 이후 추가 강우에 농업인·농작물·농업시설물 피해 우려 - 비 그친 뒤 고온다습 날씨…온열질환 예방, 농작물 병해충 예방 등 기술 지도 강화 농촌진흥청은 8월 4일 오전, 본청 영농종합상황실에서 서효원 차장 주재로 '호우·폭염 대응 점검 회의' 열고, 각 도(道)와 특·광...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701574&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">&quot;작물 유전자 켰다 껐다&quot; 유전자 기능 분석용 프로모터 개발</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 농촌진흥청, 국화 이용해 유전자 발현 조절 스위치 '프로모터' 개발 - 다양한 작물의 유전자 기능분석에 활용해 우량 육종 소재 개발 기여 농촌진흥청은 생명공학 연구에서 원하는 유전자 기능을 확인하는 데 이용하는 '프로모터'를 개발했다.
+
+프로모터란 유전자 발현을 조절하는 스위치 역할을 하는 유전자를 뜻한다.
+
+종류에 따라 원하는 물질의 생산을 늘리거나 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701682&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">사과 수급 안정 총력, 수확기까지 현장 기술 지도 강화</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 사과연구센터 현장기술지원단, 10월 중순까지 50개 시군 대상 기술 상담 - 폭염, 집중호우 대응… 물, 병해충 관리 기술 집중 지원 농촌진흥청은 사과 수급 안정을 위해 10월 중순까지 주산지 사과 농가를 대상으로 현장 기술 상담(컨설팅)을 추진 중이라고 밝혔다.
+
+이번 기술 상담은 잦은 기상 이변으로 인한 사과 수급 불안 요인을 미리 차단하고, 농가 ...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701489&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">농촌진흥청, 벼멸구 대규모 발생 대응 긴급조치 모의훈련 실시</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 초기 긴급방제 등 확산 차단 위한 중앙·지방 협업 대응체계 점검 - 실제 위기 상황 가정, 대응 능력 제고에 중점 두고 진행 농촌진흥청은 8월 5일 오후, 본청 영농종합상황실에서 '벼멸구 대규모 발생 대응 긴급조치 모의훈련'을 정부협업시스템(PC 영상회의)으로 진행했다.
+
+이번 모의훈련은 벼멸구 등 주요 병해충의 급속한 확산에 대비해 중앙-지방 농촌진흥...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701909&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농촌진흥청</div>
+                <h2 class="article-title">'사료피 신품종 현장 평가 및 수확 연시회' 개최</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">- 신품종 '다온', 폭우 속 안정 생육…논 활용도 제고 기대 - 전략작물직불제 연계, 논 하계 사료작물 확대 기반 마련 농촌진흥청 국립축산과학원은 여름철 논에서도 안정적으로 자랄 수 있는 사료피 신품종'다온'재배 기술을 소개하고 현장 실용성을 알아보기 위해 8월 5일 경남 창녕군 실증 재배지에서'사료피 신품종 현장 평가 및 수확 연시회'를 개최했다.
+
+국...</div>
+                <a href="https://www.korea.kr/briefing/pressReleaseView.do?newsId=156701903&call_from=rsslink" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">봄철 전국 농업기계 순회수리봉사 실시</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573356/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title"> 인공지능(AI)과 농업의 만남, 스마트농업 인공지능(AI) 경진대회로 더 가까워지다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573388/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">공중방역수의사 처우 개선을 위한 정근수당 가산금 신설</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573387/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">외식업계 애로사항 청취 및 해결방안 논의, 외식물가 안정에 대한 업계 협조 당부</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573384/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">축산 단체와 축산 관련 현안 및 장기 발전 과제에 대해 논의</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573383/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">친환경축산직불금, 이제 평생 받으세요!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573382/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">3월 한 달간 수입 묘목류 대상 특별검역기간 운영</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573381/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농촌소멸대응을 위한 체류형 단지 3개소, 자율규제혁신지구 10개소 등 추진</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573380/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">청양고추 출하 양호, 특판 행사 등 소비 촉진</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573369/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농촌주민 15만명에게 찾아가는 의료서비스를 제공하는 농촌 왕진버스 출발!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573366/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">못난이 ‘모과’ 등 신품종 출원, 더 쉬워진다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573365/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">배달 앱, 온라인 플랫폼 대상 통신판매 농·축산물 원산지 단속</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573415/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">럼피스킨 2종 가축질병으로 관리 완화 등 관리방식 대폭 바뀐다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573414/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">국산 한약재 개발로 국내 자생식물의 가치를 높이고 농가와 상생 발전!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573413/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">스마트팜 해외 실증사업 신규 출범, 수출계약 체결까지 밀착 지원 강화</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573400/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">‘사람과 동물이 모두 행복한 동물복지 선진국’ 우리가 함께 만들어 갑니다!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573401/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농식품부, 축산농가 경영부담 완화 위해 도축수수료 인상 자제 당부</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573399/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">고병원성 조류인플루엔자 특별방역대책기간 3월 14일까지 2주간 연장</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573398/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농업용 기자재 부가가치세 사후환급‧영세율 적용 대상 5개 추가, 전통주 주세 경감 확대</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573397/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">2025년 가루쌀 전문생산단지 151개소 선정, 공동영농·조직화 및 가루쌀 생산 시설·장비 등 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573394/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">젊음 감성 대학생기자단과 함께 생생 활력 스마트홍보 출발!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573392/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">청년들은 농업의 미래를 보고 귀농 선택</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573439/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">육묘업 시작하려면 교육부터 신청하세요</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573433/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">제3회 ‘세계 식물건강의 날’ 어린이 포스터 공모전 개최</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573432/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">민간 중심 농촌빈집 활용 지원 본격화</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573431/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">그린바이오 기업으로 신고하고 산업 맞춤형 지원 받으세요</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573430/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">우리지역 선도기업이 지역 농산업 발전을 이끈다</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573429/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">경지면적은 감소 추세지만, 경지면적 감소 폭은 둔화 추세</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573435/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">3월 2~5일 강설 대비 농업시설 안전관리 철저 당부</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573428/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">창의적인 아이디어와 농업기술 확산의 선도자 ‘신지식농업인’ 격려 </h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573416/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">한국농수산대 2025학년도 새내기 530여 명 입학</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573417/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">전남 영광 육용 오리농장 고병원성 조류인플루엔자 확진에 따라 방역 강화  </h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573469/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">가축분뇨의 고체연료 전환 촉진 위해 지속 노력</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573454/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">낡은 보건진료소가 카페와 돌봄 공간으로 재탄생, 찾고 싶고 살고 싶은 농촌으로 변화</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573453/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">24개월 기른 한우 고기 새로운 시장 창출 및 사육방식 다양화 필요성 강조</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573452/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">「필수안내서」와 함께해요! 직불금 100% 수령</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573451/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">가축방역, 정부 주도에서 지역-민간 중심으로 전환</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573450/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">전남 영광 육용오리 농장에 대한 정기 예찰 검사에서 H5형 조류인플루엔자 항원 확인</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573455/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">올라[Olá]! 한국산 딸기는 처음이지?</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573442/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">제4회 동물보건사 자격시험 합격자 400명 발표</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573441/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농수산물 온라인도매시장 거래액 2천억 원 돌파!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573440/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농식품부, 케이(K)-농기자재 해외박람회 릴레이 참가 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573512/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">충남 천안 산란계 농장 고병원성  조류인플루엔자 확진에 따라 방역 강화  </h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573500/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">서울 청년, 농촌 창업 꿈에 날개를 달다!</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573487/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">농촌빈집 거래 활성화(농촌빈집은행) 추진</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573486/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">전국 가금농장 일제검사 중 충남 천안 산란계 농장에서 H5형 조류인플루엔자 항원 확인</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573495/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">식량농업기구(FAO) 세계식량가격지수 전월 대비 1.6% 상승</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573497/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">헝가리 내 구제역 발생으로 헝가리산 돼지고기 수입금지</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573498/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">먹거리 등 물가안정에 전부처 총력 대응 방한관광 활성화 및 과학기술분야 AI활용 지원</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573483/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+            <div class="article-card">
+                <div class="article-source">농림축산식품부</div>
+                <h2 class="article-title">아시아태평양경제협력체(APEC) 21개 회원국, 경주에서 식량안보 협력 논의</h2>
+                <div class="article-date">2025년 08월 07일 08:50</div>
+                <div class="article-content">RSS description이 없습니다.</div>
+                <a href="http://www.mafra.go.kr/bbs/home/792/573472/artclView.do" target="_blank" class="article-link">원문 보기 →</a>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>🌾 농업 뉴스 블로그</p>
+            <p>농림축산식품부와 농촌진흥청의 최신 뉴스를 실시간으로 수집하여 제공합니다.</p>
+            <div class="update-time">마지막 업데이트: 2025년 08월 07일 21:17:41</div>
+        </div>
+    </div>
+</body>
+</html>
