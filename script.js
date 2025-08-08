@@ -21,6 +21,18 @@ async function loadArticlesData() {
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM 로드 완료, 데이터 로드 시작');
     loadArticlesData();
+    
+    // 카드 뉴스에 호버 효과 추가
+    const newsCards = document.querySelectorAll('.news-card');
+    newsCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
 });
 
 function decodeHtmlEntities(text) {
@@ -30,7 +42,7 @@ function decodeHtmlEntities(text) {
     return textarea.value;
 }
 
-// 전역 함수로 showModal 선언
+// 카드 뉴스 클릭 시 모달 표시
 function showModal(index) {
     console.log('showModal 호출됨, index:', index);
     
@@ -68,7 +80,16 @@ function showModal(index) {
     const modalSource = document.getElementById('modal-source');
     if (modalSource) {
         modalSource.textContent = article.source;
-        modalSource.className = 'modal-source ' + (article.source.includes('농림축산식품부') ? 'source-mafra' : (article.source.includes('농민신문') ? 'source-nongmin' : (article.source.includes('농어민신문') ? 'source-agrinet' : 'source-rnd')));
+        // 출처별 색상 클래스 설정
+        let sourceClass = 'source-rnd';
+        if (article.source.includes('농림축산식품부')) {
+            sourceClass = 'source-mafra';
+        } else if (article.source.includes('농민신문')) {
+            sourceClass = 'source-nongmin';
+        } else if (article.source.includes('농어민신문')) {
+            sourceClass = 'source-agrinet';
+        }
+        modalSource.className = 'modal-source ' + sourceClass;
     }
     
     // 날짜 설정
@@ -88,13 +109,27 @@ function showModal(index) {
     // 본문 설정
     const modalContent = document.getElementById('modal-content-text');
     if (modalContent) {
-        modalContent.textContent = decodeHtmlEntities(article.content);
+        const content = decodeHtmlEntities(article.content);
+        // 본문을 단락으로 나누어 표시
+        const paragraphs = content.split('\n\n').filter(p => p.trim());
+        let formattedContent = '';
+        
+        paragraphs.forEach(paragraph => {
+            if (paragraph.trim()) {
+                formattedContent += `<p>${paragraph.trim()}</p>`;
+            }
+        });
+        
+        modalContent.innerHTML = formattedContent;
     }
     
     // 원문 링크 설정
     const modalLink = document.getElementById('modal-original-link');
-    if (modalLink) {
+    if (modalLink && article.link) {
         modalLink.href = article.link;
+        modalLink.style.display = 'inline-block';
+    } else if (modalLink) {
+        modalLink.style.display = 'none';
     }
     
     // 모달 표시
@@ -102,16 +137,42 @@ function showModal(index) {
     if (modal) {
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        
+        // 모달 애니메이션
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.style.opacity = '0';
+            modalContent.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+                modalContent.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                modalContent.style.opacity = '1';
+                modalContent.style.transform = 'scale(1)';
+            }, 10);
+        }
+        
         console.log('모달이 표시되었습니다.');
     }
 }
 
-// 전역 함수로 closeModal 선언
+// 모달 닫기
 function closeModal() {
     const modal = document.getElementById('modal');
     if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+            modalContent.style.opacity = '0';
+            modalContent.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        } else {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
         console.log('모달이 닫혔습니다.');
     }
 }
@@ -120,8 +181,7 @@ function closeModal() {
 window.onclick = function(event) {
     const modal = document.getElementById('modal');
     if (event.target == modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
+        closeModal();
     }
 }
 
@@ -129,6 +189,16 @@ window.onclick = function(event) {
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeModal();
+    }
+}
+
+// 모달 내부 클릭 시 이벤트 전파 방지
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('modal');
+    const modalContent = modal ? modal.querySelector('.modal-content') : null;
+    
+    if (modalContent && modalContent.contains(event.target)) {
+        event.stopPropagation();
     }
 });
 
