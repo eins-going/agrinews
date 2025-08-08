@@ -111,7 +111,9 @@ function showModal(index) {
     if (modalContent) {
         const content = decodeHtmlEntities(article.content);
         // 본문을 단락으로 나누어 표시
-        const paragraphs = content.split('\n\n').filter(p => p.trim());
+        const paragraphs = content.split('
+
+').filter(p => p.trim());
         let formattedContent = '';
         
         paragraphs.forEach(paragraph => {
@@ -192,18 +194,7 @@ document.addEventListener('keydown', function(event) {
     }
 }
 
-// 모달 내부 클릭 시 이벤트 전파 방지
-document.addEventListener('click', function(event) {
-    const modal = document.getElementById('modal');
-    const modalContent = modal ? modal.querySelector('.modal-content') : null;
-    
-    if (modalContent && modalContent.contains(event.target)) {
-        event.stopPropagation();
-    }
-});
-
 // 전역 함수들이 제대로 로드되었는지 확인
 console.log('JavaScript 모달 함수들이 로드되었습니다.');
 console.log('showModal 함수:', typeof showModal);
 console.log('closeModal 함수:', typeof closeModal);
-        
